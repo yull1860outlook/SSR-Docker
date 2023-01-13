@@ -34,7 +34,7 @@ jobs:
           tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_b5686caba9854471b770bd1578474af4 }}/ssr-docker:${{ github.sha }}
           file: ./Dockerfile
 
-    deploy:
+  deploy:
       runs-on: ubuntu-latest
       needs: build
       environment:
